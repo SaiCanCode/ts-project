@@ -1,38 +1,39 @@
-// export interface Item {
-//     id: string,
-//     item: string,
-//     checked: boolean,
-// }
+ export interface Item {
+     id: string,
+     item: string,
 
-// export default class ListItem implements Item {
+     checked: boolean,
+ }
 
-//     constructor(
-//         // private _id: string = '',
-//         // private  _item: string = '',
-//         // private _checked: boolean = false,
-//     ) { }
+ export default class ListItem implements Item {
 
-//     get id(): string {
-//         return this._id
-//     }
+     constructor(
+            private _id: string = '',
+             private  _item: string = '',
+             private _checked: boolean = false,
+     ) { }
 
-//     set id(id: string) {
-//         this._id = id
-//     }
+    get id(): string {
+        return this._id
+    }
 
-//     get item(): string {
-//         return this._item
-//     }
+    set id(id: string) {
+        this._id = id
+    }
 
-//     set item(item: string) {
-//         this._item = item
-//     }
+     get item(): string {
+         return this._item
+     }
 
-//     get checked(): boolean {
-//         return this._checked
-//     }
+     set item(item: string) {
+        this._item = item
+     }
 
-//     set checked(checked: boolean) {
-//         this._checked = checked
-//     }
-// }
+     get checked(): boolean {
+       return this._checked
+     }
+
+     set checked(checked: boolean) {
+         this._checked = checked
+    }
+ }
